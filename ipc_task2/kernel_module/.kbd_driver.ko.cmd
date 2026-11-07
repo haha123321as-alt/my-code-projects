@@ -1,0 +1,1 @@
+savedcmd_kbd_driver.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-7.0.0-43-generic/scripts/module.lds -o kbd_driver.ko kbd_driver.o kbd_driver.mod.o .module-common.o
